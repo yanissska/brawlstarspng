@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidature Staff - BSPNG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rejoins l'équipe !</h1>
+            <p>Postule dès maintenant pour devenir membre du staff BSPNG !</p>
+        </header>
+            
+            <div id="loginBtnContainer" class="login-container">
+            <button id="loginBtn">Se connecter avec Discord</button>
+        </div>
+
+        <div id="userInfo" class="hidden">
+            <h2>Bienvenue, <span id="username"></span></h2>
+
+            <form id="form">
+                <div id="page1">
+                    <label for="motivation">Pourquoi veux-tu rejoindre notre équipe ? C'est une des questions les plus importantes</label>
+                    <textarea id="motivation" name="motivation" rows="4" required></textarea>
+
+                    <label for="experience">As-tu déjà de l'expérience ? Avec qui/quoi, pendant combien de temps, à quelle fréquence...</label>
+                    <textarea id="experience" name="experience" rows="4" required></textarea>
+
+                    <label for="age">Quel est ton âge ?</label>
+                    <textarea id="age" name="age" required></textarea>
+
+                    <button type="button" id="nextPage1">Page suivante</button>
+                </div>
+
+                <div id="page2" class="hidden">
+                    <label for="role">Quel rôle souhaites-tu ? (Plus haut dans la liste = moins de place)</label>
+                    <select id="role" name="role" required>
+                        <option value="Responsable">Responsable</option>
+                        <option value="Administrateur">Administrateur</option>
+                        <option value="Modérateur">Modérateur</option>
+                        <option value="Support">Support</option>
+                        <option value="Animateur">Animateur</option>
+                    </select>
+
+                    <label for="disponibilites">Quelles sont tes disponibilités ? (Réponse libre)</label>
+                    <textarea id="disponibilites" name="disponibilites" rows="4"></textarea>
+
+                    <button type="button" id="nextPage2">Page suivante</button>
+                </div>
+
+                <div id="page3" class="hidden">
+                    <button type="submit">Envoyer ma candidature</button>
+                </div>
+            </form>
+            <div id="confirmationMessage" class="hidden">
+                <p>Merci pour ta candidature ! Nous l'avons bien reçue.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
